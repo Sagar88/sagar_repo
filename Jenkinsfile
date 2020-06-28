@@ -9,21 +9,21 @@ pipeline {
         stage('Compile') {
             steps {
                 echo "Compiling..."
-                sh "/usr/local/bin/sbt compile"
+                sh "/Users/sagarkulkarni/dev/sbt/bin/sbt compile"
             }
         }
 
         stage('Test') {
             steps {
                 echo "Testing..."
-                sh "/usr/local/bin/sbt test"
+                sh "/Users/sagarkulkarni/dev/sbt/bin/sbt test"
             }
         }
 
         stage('Package') {
             steps {
                 echo "Packaging..."
-                sh "/usr/local/bin/sbt package"
+                sh "/Users/sagarkulkarni/dev/sbt/bin/sbt package"
             }
         }
 
